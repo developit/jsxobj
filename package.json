@@ -1,0 +1,20 @@
+{
+  "name": "jsxobj",
+  "version": "1.0.0",
+  "description": "Converts JSX to JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developit/jsxobj.git"
+  },
+  "keywords": ["jsx","json","webpack"],
+  "author": "Jason Miller <jason@developit.ca>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developit/jsxobj/issues"
+  },
+  "homepage": "https://github.com/developit/jsxobj#readme"
+}
