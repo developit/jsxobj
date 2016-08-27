@@ -1,6 +1,12 @@
-# `jsxobj`
+# `jsxobj` [![NPM](https://img.shields.io/npm/v/jsxobj.svg?style=flat)](https://www.npmjs.org/package/jsxobj) [![travis-ci](https://travis-ci.org/developit/jsxobj.svg?branch=master)](https://travis-ci.org/developit/jsxobj)
 
-Converts JSX to JSON.
+Converts JSX to JSON <sub>using blood magic</sub>.
+
+```sh
+npm install --save jsxobj
+```
+
+---
 
 ### Example
 

@@ -1,0 +1,25 @@
+{
+  "name": "webpack",
+  "target": "web",
+  "watch": true,
+  "entry": {
+    "path": "src/index.js"
+  },
+  "resolve": {
+    "alias": {
+      "from": "react-dom",
+      "to": "preact-compat"
+    }
+  },
+  "plugins": {
+    "uglify-js": {
+      "opts": {
+        "compression": true,
+        "mangle": false
+      }
+    },
+    "custom-plugin": {
+      "foo": "bar"
+    }
+  }
+}

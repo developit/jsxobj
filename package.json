@@ -2,19 +2,32 @@
   "name": "jsxobj",
   "version": "1.0.0",
   "description": "Converts JSX to JSON.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d lib -s",
+    "prepublish": "npm run -s build",
+    "test": "babel-node test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/developit/jsxobj.git"
   },
-  "keywords": ["jsx","json","webpack"],
+  "keywords": [
+    "jsx",
+    "json",
+    "webpack"
+  ],
   "author": "Jason Miller <jason@developit.ca>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/developit/jsxobj/issues"
   },
-  "homepage": "https://github.com/developit/jsxobj#readme"
+  "homepage": "https://github.com/developit/jsxobj#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
 }
