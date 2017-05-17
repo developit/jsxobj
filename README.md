@@ -1,7 +1,5 @@
 # `jsxobj` [![NPM](https://img.shields.io/npm/v/jsxobj.svg?style=flat)](https://www.npmjs.org/package/jsxobj) [![travis-ci](https://travis-ci.org/developit/jsxobj.svg?branch=master)](https://travis-ci.org/developit/jsxobj)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/developit/jsxobj.svg)](https://greenkeeper.io/)
-
 Converts JSX to Objects (JSON) <sub>using blood magic</sub>.
 
 ```sh
