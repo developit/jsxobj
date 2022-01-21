@@ -6,21 +6,21 @@ import arrayFixture from './arrayFixture.json';
 // example of an import'd plugin
 const CustomPlugin = (config) => ({
     ...config,
-    name: 'custom-plugin',
+    name: 'custom-plugin'
 });
 
 var json = (
     <webpack target="web" watch>
         <entry path="src/index.js" />
         <resolve>
-            <alias from="react-dom" to="preact-compat" />
+                <alias from="react-dom" to="preact-compat" />
         </resolve>
         <plugins>
-            <uglify-js opts={{
-                    compression: true,
-                    mangle: false,
+                <uglify-js opts={{
+                        compression: true,
+                        mangle: false,
                 }} />
-            <CustomPlugin foo="bar" />
+                <CustomPlugin foo="bar" />
         </plugins>
     </webpack>
 );
