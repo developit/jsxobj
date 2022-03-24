@@ -16,7 +16,7 @@ export default function h(name, attrs, ...children) {
       }
 
 			delete child.name;
-		}		else {
+		}	else {
 			obj.value = child;
 		}
 	});
