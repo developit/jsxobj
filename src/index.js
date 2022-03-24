@@ -9,14 +9,9 @@ export default function h(name, attrs, ...children) {
 		// collapse it into the current object for MAGIC
 		let { name } = child;
 		if (name) {
-      if(obj[name]){
-        obj[name] = [obj[name], child].flat()
-      } else {
-        obj[name] = child;
-      }
-
+			obj[name] = obj[name] ? [obj[name], child].flat() : child
 			delete child.name;
-		}	else {
+		} else {
 			obj.value = child;
 		}
 	});
