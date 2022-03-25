@@ -6,10 +6,16 @@
 		"path": "src/index.js"
 	},
 	"resolve": {
-		"alias": {
-			"from": "react-dom",
-			"to": "preact-compat"
-		}
+		"alias": [
+			{
+				"from": "react",
+				"to": "preact-compat"
+			},
+			{
+				"from": "react-dom",
+				"to": "preact-compat"
+			}
+		]
 	},
 	"plugins": {
 		"uglify-js": {

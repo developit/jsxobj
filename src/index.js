@@ -2,17 +2,16 @@ export default function h(name, attrs, ...children) {
 	let obj = { name, ...attrs };
 
 	// invoke any functions, passing the object through them
-	if (typeof name==='function') obj = name(obj);
+	if (typeof name === 'function') obj = name(obj);
 
-	[].concat(...children).forEach( child => {
+	[].concat(...children).forEach((child) => {
 		// if the child is an object with a name property,
 		// collapse it into the current object for MAGIC
 		let { name } = child;
 		if (name) {
-			obj[name] = child;
+			obj[name] = obj[name] ? [obj[name], child].flat() : child;
 			delete child.name;
-		}
-		else {
+		} else {
 			obj.value = child;
 		}
 	});
